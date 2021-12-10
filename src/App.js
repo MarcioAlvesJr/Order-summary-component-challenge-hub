@@ -1,15 +1,12 @@
-const HeroIlustration = ()=>{
-  return <div className="illustration-hero"></div>
-}
-const CardWrapper = ({children})=>{
-  return <div className="h-fit">{children}</div>
-}
+const Wrapper = ({children})=> <div className="pattern-background-desktop bg-no-repeat bg-indigo-100">{children}</div>
+const HeroIlustration = ()=><div className="illustration-hero"></div>
+const Card = ({children})=><div className="h-fit bg-white p-10 border rounded-xl drop-shadow-2xl">{children}</div>
 
 function App() {
   return (
-    <div className="pattern-background-desktop bg-no-repeat bg-indigo-100">
+    <Wrapper>
       <div className="container m-auto min-h-screen flex justify-center items-center">
-        <CardWrapper>
+        <Card>
           <HeroIlustration/>
           <h1>Order Summary</h1>
           <p>You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
@@ -24,9 +21,9 @@ function App() {
           <button>Proceed to Payment</button>
           <button>Cancel Order</button>
 
-        </CardWrapper>
+        </Card>
       </div>  
-    </div>
+    </Wrapper>
   );
 }
 
