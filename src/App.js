@@ -1,15 +1,6 @@
 import HeroIlustrationImg from './images/illustration-hero.svg'
 import IconMusicImg from './images/icon-music.svg'
 
-const PaleNlue= " hsl(225,100%,94%)"
-const BrightBlue= "hsl(245,75%,52%)"
-
-// Neutral
-
-const VeryPaleBlue= "hsl(225,100%,98%)"
-const DesaturatedBlue="hsl(224,23%,55%)"
-const DarkBlue= "hsl(223,47%,23%)"
-
 
 const HeroIlustration = ()=><img className='w-full' src={HeroIlustrationImg} alt="illustration-hero"></img>
 const IconMusic = ()=><img className='' src={IconMusicImg} alt="icon-music"></img>
